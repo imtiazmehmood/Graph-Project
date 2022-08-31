@@ -34,7 +34,7 @@ function App() {
       <ApolloProvider client={client}>
         <div className="App">
           <Clients />
-          <AddClient visible={visible} />
+          <AddClient visible={visible} setVisible={setVisible} />
         </div>
       </ApolloProvider>
     </>

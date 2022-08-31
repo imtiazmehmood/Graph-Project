@@ -8,7 +8,7 @@ function ClientRow({ client }) {
     variables: { id: client.id },
     //1st Method to Refetch Data With API Call
     // refetchQueries: [{ query: GET_CLIENTS }],
-    // 2nd Method to Refetch Data
+    // 2nd Method to Refetch Data with Cache
     update(cache, { data: { deleteClient } }) {
       const { clients } = cache.readQuery({
         query: GET_CLIENTS,
