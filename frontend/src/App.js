@@ -34,7 +34,32 @@ function App() {
       <ApolloProvider client={client}>
         <div className="App">
           <Clients />
+
           <AddClient visible={visible} setVisible={setVisible} />
+          <div
+            className="flex flex-row justify-between items-center w-full h-96 bg-slate-500"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div className="flex-row justify-between items-center">
+              <button
+                onClick={() => setVisible(!visible)}
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
+              >
+                Add Client
+              </button>
+
+              <button
+                onClick={() => {}}
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
+              >
+                Update Client
+              </button>
+            </div>
+          </div>
         </div>
       </ApolloProvider>
     </>

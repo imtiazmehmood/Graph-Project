@@ -29,7 +29,7 @@ function AddClient({ visible, setVisible }) {
       id="addClient-modal"
       aria-hidden="true"
       className={`${
-        visible ? "hidden" : null
+        !visible ? "hidden" : null
       } overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full flex items-center justify-center`}
     >
       <div className="bg-orange-300  relative p-4 w-full max-w-md h-full md:h-auto">
